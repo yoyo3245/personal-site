@@ -1,0 +1,31 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+.arrow-container {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+}
+
+.bi-arrow-down {
+  font-size: 3.5rem;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+}
+
+.bi-arrow-down.animating {
+  animation: pulse-down 1s ease-in-out;
+}
+
+@keyframes pulse-down {
+  50% {
+    transform: translateY(30px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

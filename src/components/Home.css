@@ -1,0 +1,32 @@
+.Home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-top: 11rem;
+}
+
+.rotating-text {
+    margin-top: -0.25rem;
+    opacity: 70%;
+    height: 2.5rem;
+    line-height: 1.2;
+    position: relative;    /* Add position relative */
+    top: -1rem;           /* Move text up */
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+.description-text {
+    position: relative;
+}
+
+
+.react-rotating-text-cursor {
+    color:#4963f9;
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}

@@ -19,7 +19,7 @@ function Navbar() {
       <div className="nav-title">Yoseph Endawoke</div>
       
       <div className="nav-right">
-        <a className="nav-item">About</a>
+        <a className="nav-item">About Me</a>
         <a className="nav-item">Projects</a>
         <a className="nav-item">Resume</a>
         <a className="nav-item">Contact</a>
