@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ScrollArrow.css';
+import '../styles/ScrollArrow.css';
 
 const ClickableArrow = () => {
   const [isAnimating, setIsAnimating] = useState(false);

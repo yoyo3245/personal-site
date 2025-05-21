@@ -6,11 +6,12 @@
     justify-content: flex-start;
     font-size: calc(10px + 2vmin);
     color: white;
-    padding-top: 11rem;
+    padding-top: 16rem;
+    
 }
 
 .rotating-text {
-    margin-top: -0.25rem;
+    margin-top: 1.5rem;
     opacity: 70%;
     height: 2.5rem;
     line-height: 1.2;
@@ -29,4 +30,23 @@
 .react-rotating-text-cursor {
     color:#4963f9;
     animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+.icons{
+    display: flex;
+    list-style-type: none;
+    margin-top: 1rem;
+    gap: 3rem;
+}
+
+.bi-github, .bi-linkedin, .bi-instagram {
+    font-size: 2rem;
+    position: relative;
+    top: 0.125rem;
+    color: white;
+  }
+
+.home-description{
+    margin-top: 1.5rem;
+    max-width: 50rem;
 }

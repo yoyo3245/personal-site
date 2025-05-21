@@ -1,0 +1,72 @@
+.projects{
+    display: flex;
+    flex-direction: row;
+    height: 100vh; 
+    color: white;
+}
+
+.urmc-box{
+    background-color: #C4AB46;
+    border: 0px solid black;
+}
+
+.animate-box{
+    background-color: #5e7ec8;
+    border: 0px solid black;
+}
+
+.courseflow-box{
+    background-color: #C44646;
+    border: 0px solid black;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: center;
+    gap: 2.5%;  
+    border-radius: 15px;
+    width: auto; 
+    height: 40rem; 
+    width: 50rem;
+    max-width: 1340px; 
+    position: relative;
+    flex-direction: row;
+    padding: 2%;  
+    overflow: visible;
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+
+.text-container{
+    margin-top: -3rem;
+    flex: .8; /* Take up equal space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text vertically */
+    
+}
+
+.role{
+    opacity: .7;
+}
+
+.text {
+    font-size: calc(10px + 2vmin);
+    color: white   
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    max-width: 35rem;
+}
+
+.project-title {
+    font-size: calc(300% + 2vmin);
+}
