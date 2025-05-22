@@ -20,17 +20,17 @@ export default function Home() {
             <ul className='icons'>
               <li>
                 <a href="https://linkedin.com/in/yosephendawoke" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-linkedin"></i>
+                  <i className="bi bi-linkedin text-white hover:text-gray-300 transition-colors duration-300"></i>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/yoyo3245" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-github"></i>
+                  <i className="bi bi-github text-white hover:text-gray-300 transition-colors duration-300"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/yoseph.end" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-instagram"></i>
+                  <i className="bi bi-instagram text-white hover:text-gray-300 transition-colors duration-300"></i>
                 </a>
               </li>
             </ul>
