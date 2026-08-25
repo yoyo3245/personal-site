@@ -12,7 +12,12 @@
   font-size: 3.5rem;
   cursor: pointer;
   display: inline-block;
-  color: white;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.bi-arrow-down:hover {
+  color: var(--accent);
 }
 
 .bi-arrow-down.animating {

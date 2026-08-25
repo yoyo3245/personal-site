@@ -9,28 +9,28 @@ export default function Home() {
               Hey, I'm Yoseph!
             </h1>
             <h2 className='rotating-text'>
-              <ReactRotatingText items={['Software Engineer 💻', 'Student 🧑🏾‍🎓', 'Logic Lover 🤓', 'Batman 🦇']}/>
+              <ReactRotatingText items={['Software Engineer 💻', 'Compiler Enthusiast 🦀', 'Cornell CS \'27 🧑🏾‍🎓', 'Batman 🦇']}/>
             </h2>
 
             <p className='home-description'>
-              An engineer passionate about building impactful projects
-              exploring the intersection of human behavior and technology.
+              An engineer passionate about building impactful projects,
+              from production systems at Meta and Niantic to compilers built from scratch.
             </p>
 
             <ul className='icons'>
               <li>
                 <a href="https://linkedin.com/in/yosephendawoke" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-linkedin text-white hover:text-gray-300 transition-colors duration-300"></i>
+                  <i className="bi bi-linkedin home-icon"></i>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/yoyo3245" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-github text-white hover:text-gray-300 transition-colors duration-300"></i>
+                  <i className="bi bi-github home-icon"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/yoseph.end" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-instagram text-white hover:text-gray-300 transition-colors duration-300"></i>
+                  <i className="bi bi-instagram home-icon"></i>
                 </a>
               </li>
             </ul>

@@ -1,66 +1,55 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../styles/Navbar.css';
+import ThemeToggle from './ThemeToggle';
 
-const scrollToHome = () => {
-  document.getElementById('home')?.scrollIntoView({ 
+const scrollTo = (id) => {
+  document.getElementById(id)?.scrollIntoView({
     behavior: 'smooth'
   });
 };
-
-const scrollToAbout = () => {
-  document.getElementById('about-me')?.scrollIntoView({ 
-    behavior: 'smooth'
-  });
-};
-
-const scrollToProjects = () => {
-  document.getElementById('projects')?.scrollIntoView({ 
-    behavior: 'smooth'
-  });
-};
-const scrollToContact = () => {
-  document.getElementById('contact')?.scrollIntoView({ 
-    behavior: 'smooth'
-  });
-};
-
 
 function Navbar() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State for sidebar visibility
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen); // Toggle sidebar visibility
+    setIsSidebarOpen(!isSidebarOpen);
   };
-  
+
+  const go = (id) => () => {
+    scrollTo(id);
+    setIsSidebarOpen(false);
+  };
 
   return (
     <nav>
       <ul className={`sidebar ${isSidebarOpen ? 'visible' : ''}`}>
         <li>
-          <a className='sidebarTitle' onClick={scrollToHome}>Yoseph&nbsp;Endawoke</a>
-          <a onClick={toggleSidebar}><i class="bi bi-x-lg"></i></a>
+          <button type='button' className='sidebarTitle' onClick={go('home')}>Yoseph&nbsp;Endawoke</button>
+          <button type='button' onClick={toggleSidebar} aria-label='Close menu'><i className="bi bi-x-lg"></i></button>
         </li>
-        <li><a onClick={scrollToAbout}>About Me</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Resume</a></li>
-        <li><a>Contact</a></li>
+        <li><button type='button' onClick={go('about-me')}>About Me</button></li>
+        <li><button type='button' onClick={go('experience')}>Experience</button></li>
+        <li><button type='button' onClick={go('projects')}>Projects</button></li>
+        <li><a href={`${process.env.PUBLIC_URL}/2027_Endawoke_Yoseph.pdf`} target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><button type='button' onClick={go('contact')}>Contact</button></li>
+        <li className='sidebarThemeRow'>
+          <span>Theme</span>
+          <ThemeToggle />
+        </li>
       </ul>
 
       <ul>
-        <li className='title'><a onClick={scrollToHome}>Yoseph Endawoke</a></li>
-        <li className='hideOnMobile'><a onClick={scrollToAbout}>About Me</a></li>
-        <li className='hideOnMobile'><a onClick={scrollToProjects}>Projects</a></li>
-        {/* <li className='hideOnMobile'><a>Experiences</a></li> */}
-        <li className='hideOnMobile'><a href='https://drive.google.com/file/d/1MjBGNDaA3yz4P4niUIiAA4IwKz70gIOE/view?usp=sharing' target="_blank" rel="noopener noreferrer">Resume</a></li>
-        <li className='hideOnMobile'><a onClick={scrollToContact}>Contact</a></li>
-        <li className='menuButton'><a onClick={toggleSidebar}><i class="bi bi-list"></i></a></li>
+        <li className='title'><button type='button' onClick={go('home')}>Yoseph Endawoke</button></li>
+        <li className='hideOnMobile'><button type='button' onClick={go('about-me')}>About Me</button></li>
+        <li className='hideOnMobile'><button type='button' onClick={go('experience')}>Experience</button></li>
+        <li className='hideOnMobile'><button type='button' onClick={go('projects')}>Projects</button></li>
+        <li className='hideOnMobile'><a href={`${process.env.PUBLIC_URL}/2027_Endawoke_Yoseph.pdf`} target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li className='hideOnMobile'><button type='button' onClick={go('contact')}>Contact</button></li>
+        <li className='hideOnMobile navThemeToggle'><ThemeToggle /></li>
+        <li className='menuButton'><button type='button' onClick={toggleSidebar} aria-label='Open menu'><i className="bi bi-list"></i></button></li>
       </ul>
-
     </nav>
-    
-    
-
   );
 }
 
-export default Navbar; 
+export default Navbar;

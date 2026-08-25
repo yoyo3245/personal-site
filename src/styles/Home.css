@@ -5,48 +5,61 @@
     align-items: center;
     justify-content: flex-start;
     font-size: calc(10px + 2vmin);
-    color: white;
-    padding-top: 16rem;
-    
+    color: var(--text);
+    padding-top: 14rem;
 }
 
 .rotating-text {
     margin-top: 1.5rem;
-    opacity: 70%;
+    color: var(--text-muted);
     height: 2.5rem;
     line-height: 1.2;
-    position: relative;    /* Add position relative */
-    top: -1rem;           /* Move text up */
+    position: relative;
+    top: -1rem;
     min-height: 2.5rem;
     display: flex;
     align-items: center;
-  }
-  
+}
+
 .description-text {
     position: relative;
 }
 
-
 .react-rotating-text-cursor {
-    color:#4963f9;
+    color: var(--accent);
     animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
 
-.icons{
+.icons {
     display: flex;
     list-style-type: none;
-    margin-top: 1rem;
-    gap: 3rem;
+    margin-top: 1.5rem;
+    gap: 2rem;
 }
 
-.bi-github, .bi-linkedin, .bi-instagram {
-    font-size: 2rem;
+.home-icon {
+    font-size: 1.9rem;
     position: relative;
     top: 0.125rem;
-    color: white;
-  }
+    color: var(--text);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
 
-.home-description{
+.home-icon:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.home-description {
     margin-top: 1.5rem;
-    max-width: 50rem;
+    max-width: 44rem;
+    font-size: 0.55em;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+@media(max-width: 730px) {
+    .Home {
+        padding-top: 9rem;
+    }
 }
