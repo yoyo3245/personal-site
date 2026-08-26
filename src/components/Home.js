@@ -13,8 +13,8 @@ export default function Home() {
             </h2>
 
             <p className='home-description'>
-              An engineer passionate about building impactful projects,
-              from production systems at Meta and Niantic to compilers built from scratch.
+              An engineer passionate about building impactful, thoughtful software
+              that solves real problems for real people.
             </p>
 
             <ul className='icons'>

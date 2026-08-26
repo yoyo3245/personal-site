@@ -7,11 +7,7 @@ const projects = [
     role: 'Systems / Compilers',
     title: 'Eta/Rho Compiler (etac)',
     subtitle: 'Compilers',
-    bullets: [
-      'Built a full pipeline (lexer, parser, type checker, IR gen, codegen) translating Eta to x86-64 assembly.',
-      'Implemented graph-coloring register allocation and dataflow optimizations (CSE, DCE, copy propagation).',
-      'Verified correctness with 73+ unit tests and differential benchmark testing.'
-    ],
+    description: 'A Rust compiler, backwards-compatible with Rho, that translates Eta to x86-64 assembly with graph-coloring register allocation and dataflow optimizations.',
     tech: ['Rust', 'LALRPOP', 'Logos', 'x86-64'],
     links: [
       // { label: 'View Repo', href: 'https://github.coecis.cornell.edu/cs4120-2026sp/compilers', icon: 'bi-github' }
@@ -31,11 +27,7 @@ const projects = [
     role: 'Functional Programming',
     title: "Functional Texas Hold'em",
     subtitle: 'Functional Programming',
-    bullets: [
-      "Built Texas Hold'em in OCaml with full poker mechanics using functional programming principles.",
-      'Created AI opponents with probabilistic decision-making and achieved 80%+ test coverage using OUnit.',
-      'Designed modular architecture emphasizing immutability and clean functional design.'
-    ],
+    description: "A full Texas Hold'em implementation in OCaml with probabilistic AI opponents and 80%+ test coverage.",
     tech: ['OCaml', 'OUnit', 'Functional Design'],
     links: [
       { label: 'View Repo', href: 'https://github.com/fadiismail27/3110-final-project', icon: 'bi-github' }
@@ -55,11 +47,7 @@ const projects = [
     role: 'Full Stack Developer',
     title: 'AniMate',
     subtitle: 'Information Retrieval',
-    bullets: [
-      'Developed an anime recommendation app that suggests titles based on user input or descriptive prompts.',
-      'Applied NLP algorithms to utilize a text-based vector space model and generate relevant recommendations.',
-      'Designed an intuitive interface for users to explore anime based on themes, genres, or favorites.'
-    ],
+    description: 'An NLP-powered app that recommends anime titles from natural language prompts using a vector space model.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Python', 'Flask', 'NumPy', 'Pandas'],
     links: [
       { label: 'View Repo', href: 'https://github.com/Srihan-Mediboina/animate', icon: 'bi-github' },
@@ -118,11 +106,7 @@ export default function Projects() {
               <h2 className="project-title">{project.title}</h2>
               <h3 className="project-subtitle">{project.subtitle}</h3>
 
-              <ul className="project-bullets">
-                {project.bullets.map((bullet, idx) => (
-                  <li key={idx}>{bullet}</li>
-                ))}
-              </ul>
+              <p className="project-description">{project.description}</p>
 
               <div className="project-tech">
                 {project.tech.map((tech) => (

@@ -17,7 +17,7 @@ export default function AboutMe() {
             I'm a junior at <span className='accent-text'>Cornell University</span> studying <span className='accent-text'>Computer Science</span> with a minor in <span className='accent-text'>Applied Mathematics</span>, expecting to graduate in 2027. I've spent recent summers as a Software Engineer Intern at <span className='accent-text'>Meta</span> and <span className='accent-text'>Niantic Labs</span>, and I'm passionate about building impactful projects that help people.
             <br></br>
             <br></br>
-            Outside of coding, I enjoy playing video games, going to the gym, and playing guitar.
+            Outside of coding, I enjoy reading, going to the gym, and playing guitar.
           </p>
         </div>
       </div>
