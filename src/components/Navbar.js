@@ -28,6 +28,7 @@ function Navbar() {
           <button type='button' onClick={toggleSidebar} aria-label='Close menu'><i className="bi bi-x-lg"></i></button>
         </li>
         <li><button type='button' onClick={go('about-me')}>About Me</button></li>
+        <li><button type='button' onClick={go('skills')}>Skills</button></li>
         <li><button type='button' onClick={go('experience')}>Experience</button></li>
         <li><button type='button' onClick={go('projects')}>Projects</button></li>
         <li><a href={`${process.env.PUBLIC_URL}/2027_Endawoke_Yoseph.pdf`} target="_blank" rel="noopener noreferrer">Resume</a></li>
@@ -41,6 +42,7 @@ function Navbar() {
       <ul>
         <li className='title'><button type='button' onClick={go('home')}>Yoseph Endawoke</button></li>
         <li className='hideOnMobile'><button type='button' onClick={go('about-me')}>About Me</button></li>
+        <li className='hideOnMobile'><button type='button' onClick={go('skills')}>Skills</button></li>
         <li className='hideOnMobile'><button type='button' onClick={go('experience')}>Experience</button></li>
         <li className='hideOnMobile'><button type='button' onClick={go('projects')}>Projects</button></li>
         <li className='hideOnMobile'><a href={`${process.env.PUBLIC_URL}/2027_Endawoke_Yoseph.pdf`} target="_blank" rel="noopener noreferrer">Resume</a></li>

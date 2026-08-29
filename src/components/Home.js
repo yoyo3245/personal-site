@@ -9,7 +9,7 @@ export default function Home() {
               Hey, I'm Yoseph!
             </h1>
             <h2 className='rotating-text'>
-              <ReactRotatingText items={['Software Engineer 💻', 'Compiler Enthusiast 🦀', 'Cornell CS \'27 🧑🏾‍🎓', 'Batman 🦇']}/>
+              <ReactRotatingText items={['Software Engineer 💻', 'Cornell CS \'27 🧑🏾‍🎓', 'Batman 🦇']}/>
             </h2>
 
             <p className='home-description'>

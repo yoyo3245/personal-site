@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Projects from './components/projects';
+import Skills from './components/Skills';
 import FadeInSection from './components/FadeInSection';
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
       </FadeInSection>
       <FadeInSection>
         <AboutMe />
+      </FadeInSection>
+      <FadeInSection>
+        <Skills />
       </FadeInSection>
       <FadeInSection>
         <Experience />
